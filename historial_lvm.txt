@@ -1,0 +1,115 @@
+    1  disk -l
+    2  fdisk -l
+    3  sudo fdisk -l
+    4  sudo fdisk /dev/sdd 
+    5  sudo fdisk -l
+    6  free
+    7  free -h
+    8  sudo mkswap /dev/sdd1
+    9  free -h
+   10  sudo swapon /dev/sdd1
+   11  free -h
+   12  swapon -s
+   13  cat 
+   14  cat /proc/swaps
+   15  history
+   16  sudo fdisk -l
+   17  sudo fdisk /dev/sdc
+   18  sudo fdisk -l
+   19  sudo wipefs -a /dev/sdd2
+   20  sudo wipefs -a /dev/sdd3
+   21  sudo wipefs -a /dev/sdd5
+   22  sudo wipefs -a /dev/sdd6
+   23  sudo wipefs -a /dev/sdc1
+   24  sudo wipefs -a /dev/sdc2
+   25  sudo pvcreate /dev/sdd2
+   26  sudo pvcreate /dev/sdd3
+   27  sudo pvcreate /dev/sdd5
+   28  sudo pvcreate /dev/sdd6
+   29  sudo pvcreate /dev/sdc1
+   30  sudo pvcreate /dev/sdc2
+   31  pvs
+   32  sudo pvs
+   33  exit
+   34  fdisk -l
+   35  sudo fdisk -l
+   36  sudo pvs
+   37  sudo vgcreate vg_datos /dev/sdc1 dev/sdd2
+   38  sudo vgcreate vg_datos /dev/sdc1 /dev/sdd2
+   39  sudo vgs
+   40  sudo pvs
+   41  sudo vgcreate vg_web /dev/sdc2
+   42  sudo pvs
+   43  sudo lvcreate -L 1G vg_web -n lv_web1
+   44  sudo lvcreate -L 512M vg_web -n lv_web2
+   45  sudo lvcreate -L 512M vg_web -n lv_web3
+   46  sudo lvs
+   47  sudo pvs
+   48  sudo fdisk -l
+   49  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web1
+   50  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web2
+   51  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web3
+   52  ssh-keygen -t ed25519
+   53  cat $HOME/.ssh/*.pub
+   54  ls -l
+   55  cat $HOME/.ssh/*.pub
+   56  pwd
+   57  mkdir repogit
+   58  ls -l
+   59  cd repogit/
+   60  mkdir TP2_AySO
+   61  ls -l
+   62  cd TP2_AySO/
+   63  pwd
+   64  cd repogit
+   65  cd ..
+   66  rm -p TP2_AySO/
+   67  rm -r TP2_AySO/
+   68  ls -l
+   69  git clone git@github.com:aritagy/TP2_Garay_Arami.git
+   70  ls -l
+   71  cd TP2_Garay_Arami/
+   72  pwd
+   73  ls -l
+   74  sudo pvs > pvs.txt
+   75  sudo vgs > vgs.txt
+   76  sudo lvs > lvs.txt
+   77  history > historial_lvm.txt
+   78  git add .
+   79  git commit -m
+   80  ls -l
+   81  rm lvs.txt 
+   82  rm pvs.txt 
+   83  rm vgs.txt 
+   84  rm historial_lvm.txt 
+   85  ls -l
+   86  sudo pvs > pvs.txt
+   87  git add .
+   88  git commit -m "Volumenes logicos creados"
+   89  git config --global user.email "aramigaray1909@gmail.com"
+   90  git config --global user.name "Arami Garay"
+   91  got commit -m "Volumenes logicos creados"
+   92  git commit -m "Volumenes logicos creados"
+   93  ls -l
+   94  rm pvs.txt 
+   95  ls -l
+   96  sudo pvs > pvs.txt
+   97  git add .
+   98  git commit -m "Volumenes logicos creados"
+   99  git push
+  100  git commit -m "Volumenes logicos creados"
+  101  sudo vgs > vgs.txt
+  102  git add .
+  103  git commit -m "Grupo de volumenes creados"
+  104  git push
+  105  sudo lvs > lvs.txt
+  106  git add .
+  107  git commit -m "Volumenes logicos creados"
+  108  git push
+  109  ls -l
+  110  rm pvs.txt 
+  111  sudo pvs > pvs.txt
+  112  git add .
+  113  git commit -m "Volumenes fisicos creados"
+  114  git push
+  115  history > historial_lvm.txt
